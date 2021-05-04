@@ -1,0 +1,34 @@
+This code is a version of the SLEUTH CA urban growth and land use change model that uses a genetic algorithm to do the calibration.
+For more information see:
+
+Clarke, K. C. (in press) Land Use Change Modeling with SLEUTH: Improving Calibration with a Genetic Algorithm. 
+In MT Camacho Olmedo, M Paegelow, JF Mas, F Escobar (eds.) 
+Geomatic approaches for modelling land change scenarios. 
+Lecture Notes in Geoinformation and Cartography LNGC series. Springer Verlag.
+
+There is also a shorter vesion: Clarke, K. C. (2017) "Improving SLEUTH Calibration with a Genetic Algorithm" 
+GAMOLCS Geomatic Approaches for Modelling Land Change Scenarios. Porto, Portugal. http://www.gistam.org/
+
+Unzip and compile the new code for SLEUTH using the makefile. The scenario file can be the same. There is sample
+data for demo city and the two data sets used in the articles in the Input folder. in the Scenario folder is sample
+run commands for the three cases. Use a shell script, called doit in the example. The shell script can be invoked using
+
+sh doit &
+
+The job will run in the background, sending the output data to the file where it is directed in the script.
+
+Note that doit has a set of parameters and uses the "evolve" mode. If this set of parameters is included (i.e.
+there are exactly eight, these values are used. Otherwise the default values are set and used as described in the paper.
+
+It is recommended that the first 10 or 12 genes are selected and used for a narrow brute force final run. This should at least equal
+the best results form brute force, but it will use far less CPU time.
+
+I have not changed the use of MPI, and make no guarantees for runs in parallel. Code was added by Matthew Clarke-Lauer. See:
+
+Clarke-Lauer, M.  and Clarke, K. C. (2011) Evolving Simulation Modeling: Calibrating SLEUTH Using a Genetic Algorithm
+Geocomputation 2011. University College London.
+ 
+
+
+
+

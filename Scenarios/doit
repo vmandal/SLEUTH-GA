@@ -1,0 +1,3 @@
+date > Andijan2_1991_55_100_0.13_900_55_50
+../grow.exe evolve scenario.Andijan2_calibrate 55 100 0.13 900 55 50 >> Andijan2_1991_55_100_0.13_900_55_50
+date >> Andijan2_1991_55_100_0.13_900_55_50

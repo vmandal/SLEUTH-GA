@@ -1,0 +1,15 @@
+# binary
+grow
+Whirlgif/whirlgif
+GD/gddemo
+GD/giftogd
+GD/webgif
+
+# object files
+*.o
+*.a
+
+# directories
+Input
+!Input/demo200
+Output
